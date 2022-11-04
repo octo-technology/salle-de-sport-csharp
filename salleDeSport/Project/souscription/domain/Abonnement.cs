@@ -1,6 +1,6 @@
 public class Abonnement {
-    public AbonnementId abonnementId { get; private set; }
-    public FormuleChoisie formuleChoisie { get; set; }
+    public AbonnementId AbonnementId { get; private set; }
+    public FormuleChoisie FormuleChoisie { get; set; }
 
     private Abonnement(
         String intituléFormuleChoisie,
@@ -10,10 +10,10 @@ public class Abonnement {
         Boolean isEtudiant,
         IRandomUUIDGenerator randomUUIDGenerator)
     {
-        this.abonnementId = new AbonnementId(randomUUIDGenerator.generateId());
+        this.AbonnementId = new AbonnementId(randomUUIDGenerator.generateId());
     }
 
-    public static Abonnement souscrire(
+    public static Abonnement Souscrire(
         String intituléFormuleChoisie,
         String prixDeBaseFormuleChoisie,
         String duréeFormuleChoisie ,

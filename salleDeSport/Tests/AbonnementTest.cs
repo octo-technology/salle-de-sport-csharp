@@ -10,10 +10,10 @@ public class AbonnementTest
         AbonnementId abonnementId = new AbonnementId("abonnementId");
 
         // WHEN
-        Abonnement abonnementSouscrit = Abonnement.souscrire("","", "", "", true, new RandomUUIDGeneratorForTest());
+        Abonnement abonnementSouscrit = Abonnement.Souscrire("","", "", "", true, new RandomUUIDGeneratorForTest());
 
         // THEN
-        Assert.AreEqual(abonnementSouscrit.abonnementId.value, "id");
+        Assert.AreEqual(abonnementSouscrit.AbonnementId.Value, "id");
 
     }
 }
